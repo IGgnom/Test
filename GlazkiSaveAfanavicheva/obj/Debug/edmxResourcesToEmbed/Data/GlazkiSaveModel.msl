@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище GlazkiSaveAfanavichevaModelContainer" CdmEntityContainer="GlazkiSaveAfanavichevaEntities">
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище GlazkiSaveAfanavichevaModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище GlazkiSaveAfanavichevaModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище GlazkiSaveAfanavichevaModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище GlazkiSaveAfanavichevaModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GlazkiSaveAfanavichevaModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище GlazkiSaveAfanavichevaModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GlazkiSaveAfanavichevaModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище GlazkiSaveAfanavichevaModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище GlazkiSaveAfanavichevaModel.sp_upgraddiagrams" />
+    <EntitySetMapping Name="Agent">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.Agent">
+        <MappingFragment StoreEntitySet="Agent">
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="DirectorName" ColumnName="DirectorName" />
+          <ScalarProperty Name="KPP" ColumnName="KPP" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AgentTypeID" ColumnName="AgentTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgentPriorityHistory">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.AgentPriorityHistory">
+        <MappingFragment StoreEntitySet="AgentPriorityHistory">
+          <ScalarProperty Name="PriorityValue" ColumnName="PriorityValue" />
+          <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgentType">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.AgentType">
+        <MappingFragment StoreEntitySet="AgentType">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="MaterialTypeID" ColumnName="MaterialTypeID" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MinCount" ColumnName="MinCount" />
+          <ScalarProperty Name="CountInStock" ColumnName="CountInStock" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="CountInPack" ColumnName="CountInPack" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialCountHistory">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.MaterialCountHistory">
+        <MappingFragment StoreEntitySet="MaterialCountHistory">
+          <ScalarProperty Name="CountValue" ColumnName="CountValue" />
+          <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+          <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialType">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.MaterialType">
+        <MappingFragment StoreEntitySet="MaterialType">
+          <ScalarProperty Name="DefectedPercent" ColumnName="DefectedPercent" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="MinCostForAgent" ColumnName="MinCostForAgent" />
+          <ScalarProperty Name="ProductionWorkshopNumber" ColumnName="ProductionWorkshopNumber" />
+          <ScalarProperty Name="ProductionPersonCount" ColumnName="ProductionPersonCount" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ArticleNumber" ColumnName="ArticleNumber" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCostHistory">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.ProductCostHistory">
+        <MappingFragment StoreEntitySet="ProductCostHistory">
+          <ScalarProperty Name="CostValue" ColumnName="CostValue" />
+          <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductMaterial">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.ProductMaterial">
+        <MappingFragment StoreEntitySet="ProductMaterial">
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSale">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.ProductSale">
+        <MappingFragment StoreEntitySet="ProductSale">
+          <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductType">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="DefectedPercent" ColumnName="DefectedPercent" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shop">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.Shop">
+        <MappingFragment StoreEntitySet="Shop">
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplier">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="SupplierType" ColumnName="SupplierType" />
+          <ScalarProperty Name="QualityRating" ColumnName="QualityRating" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="GlazkiSaveAfanavichevaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MaterialSupplier" TypeName="GlazkiSaveAfanavichevaModel.MaterialSupplier" StoreEntitySet="MaterialSupplier">
+      <EndProperty Name="Supplier">
+        <ScalarProperty Name="ID" ColumnName="SupplierID" />
+      </EndProperty>
+      <EndProperty Name="Material">
+        <ScalarProperty Name="ID" ColumnName="MaterialID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
